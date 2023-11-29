@@ -20,7 +20,7 @@ The Apache HTTP Server, known as Apache, is a free and open-source cross-platfor
 
 1. Launch an Amazon EC2 instance with setting seen below: 
 
-AMI: "Amazon Linux 2"
+AMI: "Amazon Linux 2023"
 Instance Type : "t2micro"
 Region: "N.Virginia"
 VPC: "Default VPC"
@@ -29,7 +29,7 @@ Securtiy Group: "0.0.0.0/0-----> Port 22"
 2. Connect to your instance with SSH.
 
 
-ssh -i .....pem ec2-user@
+ssh -i  .....pem ec2-user@IP
 
 
 ## Part 3 - Installing and Configuring Apache Web Server to Run `Hello World` Page
@@ -160,6 +160,6 @@ systemctl enable httpd
 
 22. Connect the Apache Web Server from the local terminal with `curl` command.
 
-
 curl http://ec2-3-15-183-78.us-east-2.compute.amazonaws.com8.us-east-2.compute.amazonaws.com
+
 
